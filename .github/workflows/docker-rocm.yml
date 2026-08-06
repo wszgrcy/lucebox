@@ -90,7 +90,7 @@ jobs:
     #     halve wall time.
     #   • A self-hosted runner with the host's nvcc avoids the
     #     containerised CUDA toolkit pull entirely.
-    runs-on: ubuntu-26.04
+    runs-on: ubuntu-latest
     permissions:
       contents: read
       packages: write
