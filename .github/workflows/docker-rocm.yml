@@ -1,4 +1,4 @@
-name: Docker prebuilds
+name: Rocm Build
 
 # Builds the cuda12 lucebox-hub Docker image defined in docker-bake.hcl
 # and pushes it to GHCR. The bake file is the source of
