@@ -20,7 +20,7 @@ on:
   # `github.ref == refs/heads/main`; the build step's `push:` condition
   # includes push events on main.
   push:
-    branches: [main]
+    branches: [build-rocm]
     paths:
       - Dockerfile
       - Dockerfile.rocm
