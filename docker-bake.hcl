@@ -59,7 +59,7 @@ variable "DFLASH_HIP_ARCHES" { default = "gfx1151" }
 # ROCm 7.x HOST driver the 6.4.x userspace can segfault at model load — set
 # ROCM_VERSION=7.2.2 there. Keep the base aligned with the host driver (see
 # Dockerfile.rocm).
-variable "ROCM_VERSION" { default = "6.4.1" }
+variable "ROCM_VERSION" { default = "7.14.0-full" }
 
 # Image identity stamped into /opt/lucebox-hub/IMAGE_INFO at build time and
 # surfaced under /props.build at runtime (git_sha, image_tag, build_time).
@@ -141,7 +141,7 @@ target "_rocm-base" {
     dockerfile = "Dockerfile.rocm"
     args = {
         ROCM_VERSION      = ROCM_VERSION
-        UBUNTU_VERSION    = "22.04"
+        UBUNTU_VERSION    = "26.04"
         DFLASH_HIP_ARCHES = DFLASH_HIP_ARCHES
         GIT_SHA           = GIT_SHA
         IMAGE_TAG         = IMAGE_TAG
