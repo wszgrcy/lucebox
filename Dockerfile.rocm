@@ -58,15 +58,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         curl \
         git \
         git-lfs \
-        hipblas-dev \
-        hipcub-dev \
+        libhipblas-dev \
+        libhipcub-dev \
         libcurl4-openssl-dev \
         ninja-build \
         pkg-config \
         python3 \
-        rocblas-dev \
-        rocprim-dev \
-        rocwmma-dev \
+        librocblas-dev \
+        librocprim-dev \
+        librocwmma-dev \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /src
