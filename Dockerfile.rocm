@@ -150,10 +150,10 @@ ENV PATH=/opt/rocm/bin:${PATH}
 RUN apt-get update && apt-get install -y --no-install-recommends \
         ca-certificates \
         curl \
-        libhipblas \
+        # libhipblas \
         libgomp1 \
         pciutils \
-        librocblas \
+        # librocblas \
     && rm -rf /var/lib/apt/lists/*
 
 # uv (pinned) manages Python 3.12 + resolves the lucebox-dflash + pflash
